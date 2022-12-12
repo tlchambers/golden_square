@@ -14,7 +14,10 @@
 # Include the name of the method, its parameters, return value, and side effects.
 # EXAMPLE
 def count_words(string)
-  return integer
+if string.empty?
+  raise "No string given"
+end
+  string.split(" ").length
 end
 
 
