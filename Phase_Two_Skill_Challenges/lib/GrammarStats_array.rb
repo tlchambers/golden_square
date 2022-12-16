@@ -23,9 +23,10 @@ class GrammarStats_array
   def percentage_good
     # Returns as an integer the percentage of texts checked so far that passed
     # the check defined in the `check` method. The number 55 represents 55%.
-    arr_of_true = @text_checked.select { |item| item == true}
-    num_of_true = arr_of_true.length
+    # arr_of_true = @text_checked.select { |item| item == true}
+    # num_of_true = arr_of_true.length
 
+    num_of_true = @text_checked.count(true)
     total_num_of_checks = @text_checked.length
   
     percentage = (num_of_true.to_f / total_num_of_checks) * 100
