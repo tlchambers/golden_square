@@ -17,6 +17,6 @@ RSpec.describe "check_sentence_grammar method" do
   end
 
   it "fails" do
-    expect { check_sentence_grammar("") }.to raise_error "No sentence provided."
+    expect{ check_sentence_grammar("") }.to raise_error "No sentence provided."
   end
 end

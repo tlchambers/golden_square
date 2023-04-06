@@ -1,4 +1,4 @@
-require 'DiaryEntry'
+require '05_diaryentry'
 
 RSpec.describe DiaryEntry do
   it 'should create a title and content'do
